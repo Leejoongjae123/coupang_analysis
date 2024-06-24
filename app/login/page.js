@@ -14,9 +14,10 @@ export default function Component() {
 
   return (
     <NextUIProvider>
-      <div className="flex h-screen w-screen items-center justify-center bg-gradient-to-br from-rose-400 via-fuchsia-500 to-indigo-500 p-2 sm:p-4 lg:p-8">
+      {/* <div className="flex h-screen w-screen items-center justify-center bg-gradient-to-br from-rose-400 via-fuchsia-500 to-indigo-500 p-2 sm:p-4 lg:p-8"> */}
+      <div className="flex h-screen w-screen items-center justify-center bg-gradient-to-br bg-[#eee] p-2 sm:p-4 lg:p-8">
         <div className="flex w-full max-w-sm flex-col gap-4 rounded-large bg-content1 px-8 pb-10 pt-6 shadow-small">
-          <p className="pb-2 text-xl font-medium">Sign Up</p>
+          <p className="pb-2 text-xl font-bold text-center">로그인</p>
           <form
             className="flex flex-col gap-3"
             onSubmit={(e) => e.preventDefault()}
@@ -75,7 +76,7 @@ export default function Component() {
               type={isConfirmVisible ? "text" : "password"}
               variant="bordered"
             />
-            <Checkbox isRequired className="py-4" size="sm">
+            {/* <Checkbox isRequired className="py-4" size="sm">
               I agree with the&nbsp;
               <Link href="#" size="sm">
                 Terms
@@ -84,7 +85,7 @@ export default function Component() {
               <Link href="#" size="sm">
                 Privacy Policy
               </Link>
-            </Checkbox>
+            </Checkbox> */}
             <Button color="primary" type="submit">
               Sign Up
             </Button>
