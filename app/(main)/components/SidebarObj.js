@@ -21,7 +21,7 @@ import Sidebar from "./sidebar";
  * 💡 TIP: You can use the usePathname hook from Next.js App Router to get the current pathname
  * and use it as the active key for the Sidebar component.
  *
- * ```tsx
+ * ```tsxAC
  * import {usePathname} from "next/navigation";
  *
  * const pathname = usePathname();
@@ -44,7 +44,7 @@ export default function Component({children}) {
     <div className="flex h-dvh w-full">
       <div
         className={cn(
-          "relative flex h-full w-72 flex-col !border-r-small border-divider p-6 transition-width",
+          "relative flex h-full w-72 flex-col !border-r-small border-divider p-6 transition-width bg-[#eee] font-bold text-white",
           {
             "w-16 items-center px-2 py-6": isCompact,
           },
@@ -63,7 +63,7 @@ export default function Component({children}) {
             <AcmeLogo className="text-background" />
           </div>
           <span
-            className={cn("text-small font-bold uppercase opacity-100", {
+            className={cn("text-small font-bold uppercase opacity-100 text-black", {
               "w-0 opacity-0": isCompact,
             })}
           >
